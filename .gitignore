@@ -240,6 +240,14 @@ ClientBin/
 *.pfx
 *.publishsettings
 orleans.codegen.cs
+Stack.h
+Stack.c
+*.sln
+*.vcxproj
+*.gitignore
+*.gitattributes
+*.vcxproj.filters
+
 
 # Including strong name files can present a security risk
 # (https://github.com/github/gitignore/pull/2483#issue-259490424)
@@ -362,14 +370,3 @@ MigrationBackup/
 
 # Fody - auto-generated XML schema
 FodyWeavers.xsd
-
-#Stack
-Stack.h
-Stack.c
-#SLN
-*.sln
-
-*.vcxproj
-*.gitignore
-*.gitattributes
-*.vcxproj.filters
