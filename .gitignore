@@ -366,3 +366,10 @@ FodyWeavers.xsd
 #Stack
 Stack.h
 Stack.c
+#SLN
+*.sln
+
+*.vcxproj
+*.gitignore
+*.gitattributes
+*.vcxproj.filters
