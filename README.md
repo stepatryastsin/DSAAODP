@@ -6,7 +6,7 @@ This repository contains a list of tasks to be solved. Each task has a link to t
 
 ## Tree:
 1.*Ancestor problem*:
-- [x] [Task 235: Lowest Common Ancestor of a Binary Search Tree]([https://ссылка-на-задачу-1.com](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) - *DONE*
+- [x] [Task 235: Lowest Common Ancestor of a Binary Search Tree]([https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/]) - *DONE*
 
 ## Progress
 
