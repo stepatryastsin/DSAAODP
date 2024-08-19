@@ -129,14 +129,11 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="235. Lowest Common Ancestor of a Binary Search Tree.c" />
-    <ClCompile Include="main.c" />
     <ClCompile Include="Stack.c" />
-    <ClCompile Include="TreeNode.c" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="235. Lowest Common Ancestor of a Binary Search Tree.h" />
     <ClInclude Include="Stack.h" />
-    <ClInclude Include="TreeNode.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
