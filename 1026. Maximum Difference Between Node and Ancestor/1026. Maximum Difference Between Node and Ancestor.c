@@ -5,19 +5,19 @@ struct TreeNode {
     struct TreeNode* left;
     struct TreeNode* right;
 };
-int funhelp(struct TreeNode* root, int min, int max) {
+int funhelp(struct TreeNode* root, int max, int min) {
     if (root == NULL) {
         return max - min;
     }
     min = (root->val < min) ? root->val : min;
     max = (root->val > max) ? root->val : max;
-    int left = funhelp(root->left, min, max);
-    int right = funhelp(root->right, min, max);
-    return (left < right) ? left : right;
+    int left = funhelp(root->left, max, min);
+    int right = funhelp(root->right, max, min);
+    return (left > right) ? left : right;
 }
 int maxAncestorDiff(struct TreeNode* root) {
     if (root == NULL) {
         return 0;
     }
-    return helper(root, root->val, root->val);
+    return funhelp(root, root->val, root->val);
 }
