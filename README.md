@@ -6,12 +6,12 @@ This repository contains a list of tasks to be solved. Each task has a link to t
 1.*Ancestor problem*:
 - [X] [Task 235: Lowest Common Ancestor of a Binary Search Tree]([https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/]) - *DONE*
 - [X] [Task 235: Lowest Common Ancestor of a Binary Tree]([https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/]) - *DONE*
-- [ ] [Task 1026: Maximum Difference Between Node and Ancestor]([https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/]) - *NEED*
+- [X] [Task 1026: Maximum Difference Between Node and Ancestor]([https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/]) - *DONE*
 - [ ] [Task 1123: Lowest Common Ancestor of Deepest Leaves]([https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/]) - *NEED*
 
 ## Progress
 
-Out of the total number of tasks **3200**, **2** have been solved.
+Out of the total number of tasks **3200**, **3** have been solved.
 
 - [ ] Tasks not yet solved
 - [X] Tasks solved
