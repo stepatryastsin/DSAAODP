@@ -1,7 +1,10 @@
 #include "235. Lowest Common Ancestor of a Binary Search Tree.h"
-#include"TreeNode.h"
-#include "Stack.h"
 #include<stdio.h>
+struct TreeNode {
+    int val;
+    struct TreeNode* left;
+    struct TreeNode* right;
+};
 struct TreeNode* lowestCommonAncestor(struct TreeNode* root, struct TreeNode* p, struct TreeNode* q) {
     if (!root || !p || !q) {
         printf("Invalid input.\n");
