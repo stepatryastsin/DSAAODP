@@ -9,6 +9,10 @@ This repository contains a list of tasks to be solved. Each task has a link to t
 - [X] [Task 1026: Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/) - *DONE*
 - [X] [Task 1123: Lowest Common Ancestor of Deepest Leaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/) - *DONE*
 
+## String:
+1. *Parenthesis problem*
+- [X] [Task 856: Score of Parentheses](https://leetcode.com/problems/score-of-parentheses/) - *DONE*
+
 ## Progress
 
 Out of the total number of tasks **3200**, **3** have been solved.
