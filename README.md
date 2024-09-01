@@ -2,6 +2,9 @@
 
 This repository contains a list of tasks to be solved. Each task has a link to the source or a description of the task. For easy progress tracking, each task has a tick mark next to it to show if it has been solved.
 
+## LINK:
+[LEETCODE](https://leetcode.com/sesquiquadrate/)
+
 ## Tree:
 1.*Ancestor problem*:
 - [X] [Task 235: Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) - *DONE*
@@ -13,9 +16,13 @@ This repository contains a list of tasks to be solved. Each task has a link to t
 1. *Parenthesis problem*
 - [X] [Task 856: Score of Parentheses](https://leetcode.com/problems/score-of-parentheses/) - *DONE*
 
+## Arrays:
+1. *Stack problems*
+- [X] [Task 150: Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation) - *DONE*
+
 ## Progress
 
-Out of the total number of tasks **3200**, **3** have been solved.
+Out of the total number of tasks **3200**, **6** have been solved.
 
 - [ ] Tasks not yet solved
 - [X] Tasks solved
