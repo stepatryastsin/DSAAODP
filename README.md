@@ -22,7 +22,7 @@ This repository contains a list of tasks to be solved. Each task has a link to t
 
 ## Progress
 
-Out of the total number of tasks **3200**, **6** have been solved.
+Out of the total number of tasks **3200**, **70** have been solved.
 
 - [ ] Tasks not yet solved
 - [X] Tasks solved
