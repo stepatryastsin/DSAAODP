@@ -20,6 +20,10 @@ This repository contains a list of tasks to be solved. Each task has a link to t
 1. *Stack problems*
 - [X] [Task 150: Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation) - *DONE*
 
+## HashTable:
+1. *Hash function problem*
+- [ ] [Task 874: Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation) - *NEDD*
+
 ## Progress
 
 Out of the total number of tasks **3200**, **70** have been solved.
