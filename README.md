@@ -22,11 +22,11 @@ This repository contains a list of tasks to be solved. Each task has a link to t
 
 ## HashTable:
 1. *Hash function problem*
-- [ ] [Task 874: Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation) - *NEDD*
+- [X] [Task 874: Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation) - *DONE*
 
 ## Progress
 
-Out of the total number of tasks **3200**, **70** have been solved.
+Out of the total number of tasks **3200**, **71** have been solved.
 
 - [ ] Tasks not yet solved
 - [X] Tasks solved
