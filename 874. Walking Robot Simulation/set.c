@@ -5,7 +5,7 @@
 #define DEFAULT_HASH_SEED 14695981039346656037ULL
 #define FNV_PRIME 1099511628211ULL
 
-// Внутренние функции
+
 _PRIVATE uint64_t _default_hash(const char* key);
 _PRIVATE int32_t _free_elem(set* set, int32_t ind);
 _PRIVATE int32_t _set_add(set* set, uint64_t hash, const char* key);
@@ -13,7 +13,7 @@ _PRIVATE int32_t _get_index(set* set, uint64_t hash, const char* key, int32_t* o
 _PRIVATE int32_t _set_contains(set* set, uint64_t hash, const char* key);
 _PRIVATE int32_t _nominate_node(set* set, uint64_t hash, const char* key, int32_t index);
 
-// Инициализация множества
+
 int32_t set_init(set* set, int64_t elem)
 {
     if (elem <= 0) return ERROR_ALLOW; 
@@ -33,7 +33,7 @@ int32_t set_init(set* set, int64_t elem)
     return STRUE;
 }
 
-// Очистка множества
+
 int32_t set_clear(set* set)
 {
     for (int32_t i = 0; i < set->nnode; i++) {
@@ -45,7 +45,7 @@ int32_t set_clear(set* set)
     return STRUE;
 }
 
-// Уничтожение множества
+
 int32_t set_destroy(set* set)
 {
     set_clear(set);
@@ -57,7 +57,7 @@ int32_t set_destroy(set* set)
     return STRUE;
 }
 
-// Добавление элемента в множество
+
 int32_t set_add(set* set, const char* key)
 {
     if (!key) return ERROR_ALLOW; 
@@ -66,7 +66,7 @@ int32_t set_add(set* set, const char* key)
     return _set_add(set, hash, key);
 }
 
-// Проверка на наличие элемента в множестве
+
 int32_t set_contains(set* set, const char* key)
 {
     if (!key) return SFALSE; 
@@ -87,7 +87,7 @@ _PRIVATE uint64_t _default_hash(const char* key)
 
     return hash;
 }
-// Освобождение элемента
+
 _PRIVATE int32_t _free_elem(set* set, int32_t ind)
 {
     free(set->node[ind]->key);
@@ -96,7 +96,7 @@ _PRIVATE int32_t _free_elem(set* set, int32_t ind)
     return STRUE;
 }
 
-// Добавление элемента с хешем
+
 _PRIVATE int32_t _set_add(set* set, uint64_t hash, const char* key)
 {
     int32_t index;
@@ -120,7 +120,7 @@ _PRIVATE int32_t _set_add(set* set, uint64_t hash, const char* key)
     }
     return STRUE;
 }
-// Получение индекса по хешу
+
 _PRIVATE int32_t _get_index(set* set, uint64_t hash, const char* key, int32_t* out)
 {
     uint64_t i, idx;
@@ -144,14 +144,14 @@ _PRIVATE int32_t _get_index(set* set, uint64_t hash, const char* key, int32_t* o
     }
 }
 
-// Проверка наличия элемента
+
 _PRIVATE int32_t _set_contains(set* set, uint64_t hash, const char* key)
 {
     int32_t index;
     return _get_index(set, hash, key, &index);
 }
 
-// Номинация нового узла
+
 _PRIVATE int32_t _nominate_node(set* set, uint64_t hash, const char* key, int32_t index)
 {
     int32_t sizekey = strlen(key);
