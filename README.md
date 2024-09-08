@@ -15,6 +15,8 @@ This repository contains a list of tasks to be solved. Each task has a link to t
 ## String:
 1. *Parenthesis problem*
 - [X] [Task 856: Score of Parentheses](https://leetcode.com/problems/score-of-parentheses/) - *DONE*
+2. *Thompson's construction*|*String*
+- [ ] [https://leetcode.com/problems/regular-expression-matching/](https://leetcode.com/problems/regular-expression-matching/) - *NEDD*
 
 ## Arrays:
 1. *Stack problems*
