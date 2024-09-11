@@ -20,11 +20,13 @@ This repository contains a list of tasks to be solved. Each task has a link to t
 
 ## Arrays:
 1. *Stack problems*
-- [X] [Task 150: Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation) - *DONE*
+- [X] [Task 150: Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) - *DONE*
 
 ## HashTable:
 1. *Hash function problem*
-- [X] [Task 874: Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation) - *DONE*
+- [X] [Task 874: Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation/) - *DONE*
+2. *Hash table*
+- [X] [Task 13: Roman to Integer](https://leetcode.com/problems/roman-to-integer/) - *DONE*
 
 ## Progress
 
