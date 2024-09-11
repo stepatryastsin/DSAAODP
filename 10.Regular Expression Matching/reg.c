@@ -84,8 +84,6 @@ State* post2nfa(char* prfx) {
 	e = *--(stackpointer);
 	return e.start;
 }
-
-
-int isMatch(char* s, char* p) {
+int match(State* state, char* sym) {
 
 }
