@@ -16,15 +16,17 @@ This repository contains a list of tasks to be solved. Each task has a link to t
 1. *Parenthesis problem*
 - [X] [Task 856: Score of Parentheses](https://leetcode.com/problems/score-of-parentheses/) - *DONE*
 2. *Thompson's construction*|*String*
-- [ ] [https://leetcode.com/problems/regular-expression-matching/](https://leetcode.com/problems/regular-expression-matching/) - *NEDD*
+- [ ] [Task 10: Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) - *NEDD*
 
 ## Arrays:
 1. *Stack problems*
-- [X] [Task 150: Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation) - *DONE*
+- [X] [Task 150: Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) - *DONE*
 
 ## HashTable:
 1. *Hash function problem*
-- [X] [Task 874: Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation) - *DONE*
+- [X] [Task 874: Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation/) - *DONE*
+2. *Hash table*
+- [X] [Task 13: Roman to Integer](https://leetcode.com/problems/roman-to-integer/) - *DONE*
 
 ## Progress
 
