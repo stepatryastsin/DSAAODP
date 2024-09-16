@@ -27,7 +27,10 @@ This repository contains a list of tasks to be solved. Each task has a link to t
 - [X] [Task 874: Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation/) - *DONE*
 2. *Hash table*
 - [X] [Task 13: Roman to Integer](https://leetcode.com/problems/roman-to-integer/) - *DONE*
-
+      
+## Math:
+- [X] [Task 7: Reverse Integer](https://leetcode.com/problems/reverse-integer/) - *DONE*
+      
 ## Progress
 
 Out of the total number of tasks **3200**, **71** have been solved.
