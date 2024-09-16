@@ -4,7 +4,23 @@
 #include <stdlib.h>
 #include <string.h>
 
-// Создание нового элемента хеш-таблицы
+// Private creating a new hash table element
+PRIVATE struct ht_item* _ht_create_item(const char* key, const char* value);
+// Private deleting a hash table item
+PRIVATE void _ht_delete_item(struct ht_item* item);
+// Private simple hash function (we use “double hashing”)
+PRIVATE int _ht_hash(const char* s, const int prime, const int num_buckets);
+// Private сombined hash function with double hashing
+PRIVATE int _ht_get_hash(const char* key, const int num_buckets, const int attempt);
+// Private function for inserting key and value into the table
+PRIVATE void _ht_insert(struct hash_table* ht, const char* key, char* value)
+// Private function to search for a value by key in a table
+PRIVATE char* _ht_search(struct hash_table* ht, const char* k);
+// Private function for deleting key and value pairs
+static struct ht_item ht = { NULL,NULL };
+PRIVATE int _ht_delete(struct hash_table* ht, const char* k)
+
+
 PRIVATE struct ht_item* _ht_create_item(const char* key, const char* value) {
     struct ht_item* item = (struct ht_item*)malloc(sizeof(struct ht_item));
     if (!item) {
@@ -17,7 +33,6 @@ PRIVATE struct ht_item* _ht_create_item(const char* key, const char* value) {
 }
 
 
-// Удаление элемента хеш-таблицы
 PRIVATE void _ht_delete_item(struct ht_item* item) {
     if (item) {
         free(item->key);
@@ -26,7 +41,7 @@ PRIVATE void _ht_delete_item(struct ht_item* item) {
     }
 }
 
-// Простой хеш-функция (используем "double hashing")
+
 PRIVATE int _ht_hash(const char* s, const int prime, const int num_buckets) {
     long hash = 0;
     const int len = strlen(s);
@@ -37,7 +52,7 @@ PRIVATE int _ht_hash(const char* s, const int prime, const int num_buckets) {
     return (int)hash;
 }
 
-// Комбинированная хеш-функция с двойным хешированием
+
 PRIVATE int _ht_get_hash(const char* key, const int num_buckets, const int attempt) {
     const int hash_a = ht_hash(key, HT_PRIME_1, num_buckets);
     const int hash_b = ht_hash(key, HT_PRIME_2, num_buckets);
@@ -45,7 +60,7 @@ PRIVATE int _ht_get_hash(const char* key, const int num_buckets, const int attem
 }
 
 
-// Функция для вставки ключа и значения в таблицу
+
 PRIVATE void _ht_insert(struct hash_table* ht, const char* key, char* value) {
     int i = 0;
     struct ht_item* item = ht_create_item(key, value);
@@ -61,7 +76,7 @@ PRIVATE void _ht_insert(struct hash_table* ht, const char* key, char* value) {
     return 1;
 }
 
-// Функция для поиска значения по ключу в таблице
+
 PRIVATE char* _ht_search(struct hash_table* ht, const char* k) {
     int i = 0;
     int index = ht_get_hash(k, ht->count, i);
@@ -77,8 +92,7 @@ PRIVATE char* _ht_search(struct hash_table* ht, const char* k) {
     return NULL;
 }
 
-// Функция для удаления пары ключ и значение
-static struct ht_item ht = { NULL,NULL };
+
 PRIVATE int _ht_delete(struct hash_table* ht, const char* k) {
     int i = 0;
     int index = ht_get_hash(k, ht->count, i);
@@ -94,18 +108,14 @@ PRIVATE int _ht_delete(struct hash_table* ht, const char* k) {
     }
     ht->count--;
 }
-PRIVATE char* _ht_get(struct hash_table* ht, const char* k) {
 
-}
-
-// Создание новой хеш-таблицы
 struct hash_table* ht_create() {
     struct hash_table* table = malloc(sizeof(struct hash_table));
     if (!table) {
         fprintf(stderr, "Error: Unable to allocate memory for hash table\n");
         return NULL;
     }
-    table->size = 53;  // Начальный размер хеш-таблицы
+    table->size = 53;  
     table->count = 0;
     table->items = calloc(table->size, sizeof(struct ht_item*));
     if (!table->items) {
@@ -116,7 +126,7 @@ struct hash_table* ht_create() {
     return table;
 }
 
-// Удаление всей хеш-таблицы
+
 void ht_delete_table(struct hash_table* table) {
     if (table) {
         for (size_t i = 0; i < table->size; i++) {

@@ -5,12 +5,17 @@
 #define DEFAULT_HASH_SEED 14695981039346656037ULL
 #define FNV_PRIME 1099511628211ULL
 
-
+//Private hash_function
 _PRIVATE uint64_t _default_hash(const char* key);
+//Private deleting a node in the set
 _PRIVATE int32_t _free_elem(set* set, int32_t ind);
+//Private additional element in set
 _PRIVATE int32_t _set_add(set* set, uint64_t hash, const char* key);
+//We get the index of the element in the set 
 _PRIVATE int32_t _get_index(set* set, uint64_t hash, const char* key, int32_t* out);
+//Check if there is an element in the set 
 _PRIVATE int32_t _set_contains(set* set, uint64_t hash, const char* key);
+//Allocate memory for node 
 _PRIVATE int32_t _nominate_node(set* set, uint64_t hash, const char* key, int32_t index);
 
 
