@@ -6,7 +6,7 @@ This repository contains a list of tasks to be solved. Each task has a link to t
 [LEETCODE](https://leetcode.com/sesquiquadrate/)
 
 ## Tree:
-1.*Ancestor problem*
+1. *Ancestor problem*
 
 ✅ [Task 235: Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) - *DONE*
 
