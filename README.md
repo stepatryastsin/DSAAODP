@@ -23,7 +23,7 @@ This repository contains a list of tasks to be solved. Each task has a link to t
 
 3. *Thompson's construction*|*String*
 
-- [ ] [Task 10: Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) - *NEED*
+- [X] [Task 10: Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) - *NEED*
 
 ## Sort:
 1. *O(N*logN)*
@@ -62,4 +62,4 @@ Tasks  solved
 
 Not yet
 
-- [ ]
+- [X]
