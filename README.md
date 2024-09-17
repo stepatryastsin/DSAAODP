@@ -23,7 +23,12 @@ This repository contains a list of tasks to be solved. Each task has a link to t
 
 3. *Thompson's construction*|*String*
 
-[Task 10: Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) - *NEDD*
+    [Task 10: Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) - *NEED*
+
+## Sort:
+1. *O(N*logN)*
+   
+✅ [Task 912: Sort an Array](https://leetcode.com/problems/sort-an-array/) - *DONE*
 
 ## Arrays:
 1. *Stack problems*
