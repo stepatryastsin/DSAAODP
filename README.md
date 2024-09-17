@@ -7,36 +7,25 @@ This repository contains a list of tasks to be solved. Each task has a link to t
 
 ## Tree:
 1.*Ancestor problem*
-
 ✅ [Task 235: Lowest Common Ancestor of a Binary Search Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-search-tree/) - *DONE*
-
 ✅ [Task 235: Lowest Common Ancestor of a Binary Tree](https://leetcode.com/problems/lowest-common-ancestor-of-a-binary-tree/) - *DONE*
-
 ✅ [Task 1026: Maximum Difference Between Node and Ancestor](https://leetcode.com/problems/maximum-difference-between-node-and-ancestor/) - *DONE*
-
 ✅ [Task 1123: Lowest Common Ancestor of Deepest Leaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/) - *DONE*
 
 ## String:
 1. *Parenthesis problem*
-
 ✅ [Task 856: Score of Parentheses](https://leetcode.com/problems/score-of-parentheses/) - *DONE*
-
-3. *Thompson's construction*|*String*
-   
+3. *Thompson's construction*|*String*   
 - [ ] [Task 10: Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) - *NEDD*
 
 ## Arrays:
 1. *Stack problems*
-   
 ✅ [Task 150: Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) - *DONE*
 
 ## HashTable:
 1. *Hash function problem*
-   
 ✅ [Task 874: Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation/) - *DONE*
-
 3. *Hash table*
-   
 ✅ [Task 13: Roman to Integer](https://leetcode.com/problems/roman-to-integer/) - *DONE*
       
 ## Math:
