@@ -17,7 +17,6 @@ This repository contains a list of tasks to be solved. Each task has a link to t
 ✅ [Task 1123: Lowest Common Ancestor of Deepest Leaves](https://leetcode.com/problems/lowest-common-ancestor-of-deepest-leaves/) - *DONE*
 
 ## String:
-
 1. *Parenthesis problem*
 
 ✅ [Task 856: Score of Parentheses](https://leetcode.com/problems/score-of-parentheses/) - *DONE*
@@ -27,13 +26,11 @@ This repository contains a list of tasks to be solved. Each task has a link to t
 - [ ] [Task 10: Regular Expression Matching](https://leetcode.com/problems/regular-expression-matching/) - *NEDD*
 
 ## Arrays:
-
 1. *Stack problems*
    
 ✅ [Task 150: Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) - *DONE*
 
 ## HashTable:
-
 1. *Hash function problem*
    
 ✅ [Task 874: Walking Robot Simulation](https://leetcode.com/problems/walking-robot-simulation/) - *DONE*
