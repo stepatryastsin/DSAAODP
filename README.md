@@ -30,6 +30,10 @@ This repository contains a list of tasks to be solved. Each task has a link to t
    
 ✅ [Task 150: Evaluate Reverse Polish Notation](https://leetcode.com/problems/evaluate-reverse-polish-notation/) - *DONE*
 
+2. *Subarray*
+
+✅ [Task 53: Maximum Subarray](https://leetcode.com/problems/maximum-subarray/) - *DONE*
+
 ## HashTable:
 1. *Hash function problem*
    
