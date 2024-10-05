@@ -13,12 +13,12 @@ PRIVATE int _ht_hash(const char* s, const int prime, const int num_buckets);
 // Private ñombined hash function with double hashing
 PRIVATE int _ht_get_hash(const char* key, const int num_buckets, const int attempt);
 // Private function for inserting key and value into the table
-PRIVATE void _ht_insert(struct hash_table* ht, const char* key, char* value)
+PRIVATE void _ht_insert(struct hash_table* ht, const char* key, char* value);
 // Private function to search for a value by key in a table
 PRIVATE char* _ht_search(struct hash_table* ht, const char* k);
 // Private function for deleting key and value pairs
 static struct ht_item ht = { NULL,NULL };
-PRIVATE int _ht_delete(struct hash_table* ht, const char* k)
+PRIVATE int _ht_delete(struct hash_table* ht, const char* k);
 
 
 PRIVATE struct ht_item* _ht_create_item(const char* key, const char* value) {
@@ -62,9 +62,9 @@ PRIVATE int _ht_get_hash(const char* key, const int num_buckets, const int attem
 
 
 PRIVATE void _ht_insert(struct hash_table* ht, const char* key, char* value) {
-    int i = 0;
-    struct ht_item* item = ht_create_item(key, value);
-    int index = ht_get_hash(item->key, ht->count, i);
+   int i = 0;
+    struct ht_item* item = _ht_create_item(key, value);
+    int index = _ht_get_hash(item->key, ht->count, i);
     struct ht_item* cur = ht->items[index];
     while (cur != NULL) {
         int index = ht_get_hash(item->key, ht->count, i);
@@ -79,7 +79,7 @@ PRIVATE void _ht_insert(struct hash_table* ht, const char* key, char* value) {
 
 PRIVATE char* _ht_search(struct hash_table* ht, const char* k) {
     int i = 0;
-    int index = ht_get_hash(k, ht->count, i);
+    int index = _ht_get_hash(k, ht->count, i);
     struct ht_item* cur = ht->items[index];
     while (cur != NULL) {
         if (strcmp(ht->items[index]->key, k) == 0) {
@@ -95,7 +95,7 @@ PRIVATE char* _ht_search(struct hash_table* ht, const char* k) {
 
 PRIVATE int _ht_delete(struct hash_table* ht, const char* k) {
     int i = 0;
-    int index = ht_get_hash(k, ht->count, i);
+    int index = _ht_get_hash(k, ht->count, i);
     struct ht_item* cur = ht->items[index];
     while (cur != NULL) {
         if (strcmp(ht->items[index]->key, k) == 0) {

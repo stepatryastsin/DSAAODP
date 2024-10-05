@@ -6,13 +6,7 @@
 
 #define PRIVATE static
 
-/// <summary>
-/// Hash table for 53 elements for task
-/// </summary>
 
-//todo capacity
-
-//Item
 struct ht_item {
 	char* key;
 	char* value;
