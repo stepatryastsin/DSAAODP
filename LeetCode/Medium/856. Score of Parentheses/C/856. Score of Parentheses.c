@@ -47,7 +47,7 @@ void push(struct Stack* stk, int sym) {
 int pop(struct Stack* stk) {
     if (stk->top == 0) {
         fprintf(stderr, "Error: The stack is empty.\n");
-        return -1; // Вернем -1 в случае ошибки
+        return -1;
     }
     return stk->sym[--stk->top];
 }
@@ -55,7 +55,7 @@ int pop(struct Stack* stk) {
 int peek(struct Stack* stk) {
     if (stk->top <= 0) {
         fprintf(stderr, "Error: The stack is empty.\n");
-        return -1; // Вернем -1 в случае ошибки
+        return -1;
     }
     return stk->sym[stk->top - 1];
 }
@@ -65,7 +65,7 @@ int empty(struct Stack* stk) {
 }
 int scoreOfParentheses(char* s) {
     struct Stack* stack = allocatemem();
-    push(stack, 0); // Инициализируем стек с 0 для хранения результата
+    push(stack, 0);
 
     while (*s != '\0') {
         if (*s == '(') {
@@ -77,10 +77,9 @@ int scoreOfParentheses(char* s) {
             int score = secondTop + MAX(2 * top, 1);
             push(stack, score);
         }
-        s++; // Увеличиваем указатель на следующий символ
+        s++;
     }
 
     int result = pop(stack);
-    //freemem(stack);
     return result;
 }
